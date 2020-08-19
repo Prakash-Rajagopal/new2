@@ -1,0 +1,419 @@
+    1  clear
+    2  cd demo
+    3  git log --oneline
+    4  git remote -v
+    5  git add origin https://github.com/Prakash-Rajagopal/demo.git
+    6  git remote add origin https://github.com/Prakash-Rajagopal/demo.git
+    7  git remote -v
+    8  git push -u origin master
+    9  git push -u origin --tags
+   10  git log --oneline
+   11  git -a v1.1 d470158
+   12  git tag -a v1.1 d470158
+   13  git tag -a v1.2 92629e6
+   14  git tags
+   15  git show tags
+   16  git log --oneline
+   17  git push -u origin --tags
+   18  history
+   19  history >> gitcommand
+   20  cat gitcommand
+   21  ls -s
+   22  git status
+   23  git add .
+   24  git status
+   25  git commit -m "git commands added"
+   26  git push -u origin master
+   27  clear
+   28  history
+   29  clear
+   30  git --version
+   31  mkdir demo
+   32  cd demo
+   33  ls -l
+   34  git init
+   35  touch demo.java demo1.java
+   36  ls -l
+   37  git status
+   38  git add demo.java
+   39  git status
+   40  touch demo2.c demo3.xml
+   41  git status
+   42  git add .
+   43  git status
+   44  git log
+   45  git commit -m "initial draft"
+   46  git log
+   47  git log --oneline
+   48  git status
+   49  vi demo2.c
+   50  git status
+   51  git add .
+   52  git status
+   53  git commit -m "second version"
+   54  git log --oneline
+   55  git diff d470158 5f9ab03
+   56  git rm demo1.java
+   57  git status
+   58  git rm -f demo1.java
+   59  git commit -m "deletion"
+   60  git status
+   61  git rm -f demo1.java
+   62  git log --oneline
+   63  ls -l
+   64  git rm --cached demo2.c
+   65  git status
+   66  ls -l
+   67  vi .gitignore
+   68  cat .gitignore
+   69  touch test.log prakash.xml
+   70  git status
+   71  git add .
+   72  git status
+   73  ls -l
+   74  touch demo4.java
+   75  git status
+   76  git add .
+   77  git status
+   78  git commit 
+   79  git log --oneline
+   80  git status
+   81  git commit -m 
+   82  git status
+   83  git commit -m " "
+   84  git commit --amend "new msg"
+   85  git log --oneline
+   86  git tag -a v1.0 5f9ab03
+   87  git log --oneline
+   88  git show v1.0
+   89  git clone https://github.com/Prakash-Rajagopal/labs.git
+   90  clear
+   91  cd labs/aws
+   92  clear
+   93  vi setup-user.sh
+   94  chmod 600 setup-user.sh
+   95  ./setup-user.sh
+   96  chmod 700 setup-user.sh
+   97  ./setup-user.sh
+   98  clear
+   99  cd 
+  100  exit
+  101  clear
+  102  cd 
+  103  mkdir demobrn
+  104  cd demobrn
+  105  git init
+  106  git branch
+  107  touch one.c two.c
+  108  git status
+  109  git branch
+  110  git add .
+  111  git commit -m "m1"
+  112  git branch
+  113  git log --oneline
+  114  touch three.java four.xml
+  115  git status
+  116  git add .
+  117  git commit -m "m2"
+  118  git log --oneline
+  119  git branch
+  120  git branch featureone
+  121  git branch
+  122  git checkout featureone
+  123  git branch
+  124  git status
+  125  ls -s
+  126  ls -l
+  127  touch five.c 
+  128  git status
+  129  git add .
+  130  git commit -m "f1"
+  131  git log --oneline
+  132  git branch
+  133  git checkout master
+  134  git log --oneline
+  135  git checkout featureone
+  136  git log --oneline
+  137  touch six.xml
+  138  git add .
+  139  git commit -m "f2"
+  140  git log --oneline
+  141  git remote -v
+  142  git add origin https://github.com/Prakash-Rajagopal/demobrn.git
+  143  git remote add origin https://github.com/Prakash-Rajagopal/demobrn.git
+  144  git remote -v
+  145  git push -u origin master
+  146  git push -u origin featurebrn
+  147  git branch
+  148  git push -u origin featureone
+  149  git branch
+  150  git checkout master
+  151  git log --oneline
+  152  git branch
+  153  git merge featureone
+  154  git branch 
+  155  git log --oneline
+  156  cd ..
+  157  mkdir demobrn1
+  158  cd demobrn1
+  159  git init
+  160  touch 1.java 2.java
+  161  git add .
+  162  git commit -m "m1"
+  163  git log --oneline
+  164  touch 3.c 4.c
+  165  git add .
+  166  git commit -m "m2"
+  167  git log --oneline
+  168  git branch 
+  169  git branch featuretwo
+  170  git branch
+  171  git checkout featuretwo
+  172  git log --oneline
+  173  touch new1.xml
+  174  git add .
+  175  git commit -m "f1"
+  176  git log --oneline
+  177  touch new2.xml
+  178  git add .
+  179  git commit -m "f2"
+  180  git log --oneline
+  181  git branch
+  182  git checkout master
+  183  git branch
+  184  touch defect.c
+  185  git add .
+  186  git commit -m "d1"
+  187  git log --oneline
+  188  git merge featuretwo
+  189  git branch
+  190  git log --oneline
+  191  git reset --hard 25fe0f3
+  192  git log --oneline
+  193  touch defect.c
+  194  git add .
+  195  git commit -m "d1"
+  196  git log --oneline
+  197  git bracnh
+  198  git branch
+  199  git checkout featuretwo
+  200  git branch
+  201  git log --oneline
+  202  git rebase
+  203  git rebase master
+  204  git log --oneline
+  205  git branch
+  206  git checkout master
+  207  git log --oneline
+  208  git merge featuretwo
+  209  git log --oneline
+  210  git branch
+  211  git log --oneline
+  212  git log
+  213  clear
+  214  git log --oneline
+  215  git --amend -m "long f2"
+  216  git commit --amend -m "long f2"
+  217  git log --oneline
+  218  clear
+  219  cd 
+  220  git log --oneline
+  221  cd demobrn1
+  222  git log --oneline
+  223  git --tag v1.0 99ee706
+  224  git tag -a v1.0 99ee706
+  225  git log --oneline
+  226  cd 
+  227  git clone https://github.com/Prakash-Rajagopal/Demo-1.git
+  228  ls -s
+  229  cd Demo-1
+  230  ls -s
+  231  git init
+  232  git status
+  233  touch one.java
+  234  ls -s
+  235  git status
+  236  git add .
+  237  git status
+  238  git commit -m "my contribution"
+  239  git log --oneline
+  240  git remote -v
+  241  git push -u origin master
+  242  clear
+  243  cd ..
+  244  mkdir new
+  245  cd new
+  246  git init
+  247  touch one.c
+  248  git add .
+  249  git commit -m "new"
+  250  git remote -v
+  251  git remote add origin https://github.com/Prakash-Rajagopal/new.git
+  252  git remote -v
+  253  git push -u origin master
+  254  git fetch https://github.com/Prakash-Rajagopal/new.git
+  255  ls -s
+  256  git fetch origin
+  257  cd ..
+  258  cd new 
+  259  cd ..
+  260  git fetch
+  261  cd new
+  262  git fetch https://github.com/Prakash-Rajagopal/new.git
+  263  ls -s
+  264  git fetch https://github.com/Prakash-Rajagopal/new.git
+  265  ls -s
+  266  git pull https://github.com/Prakash-Rajagopal/new.git
+  267  ls -s
+  268  git log --oneline
+  269  git reset --soft 0d80fa5
+  270  git log --oneline
+  271  git status
+  272  git commit -m "modified two.c"
+  273  git log --oneline
+  274  git reset --hard 11756a0
+  275  git reset --hard 0d80fa5
+  276  git log --oneline
+  277  git status
+  278  touch two.c
+  279  git add .
+  280  git status
+  281  git restore --staged two.c
+  282  git restore --staged
+  283  git reset --staged two.c
+  284  git restore two.c --staged
+  285  ls -s
+  286  git status
+  287  git commit -m "new"
+  288  git status
+  289  git log --oneline
+  290  git reset --soft 0d80fa5
+  291  git status
+  292  git restore --staged two.c
+  293  git restore two.c
+  294  git revert --staged two.c
+  295  git status
+  296  git log --oneline
+  297  git reset HEAD two.c
+  298  git status
+  299  git branch
+  300  cd ..
+  301  mkdir new1
+  302  cd new1
+  303  touch one.c two.c
+  304  git add .
+  305  git init
+  306  ls -s
+  307  git add .
+  308  git commit -m "m1"
+  309  git log --oneline
+  310  touch three.xml four.xml
+  311  git add .
+  312  git commit -m "m2"
+  313  git log --oneline
+  314  git remote -v
+  315  git remote add origin https://github.com/Prakash-Rajagopal/new1.git
+  316  git remote -v
+  317  git branch
+  318  git push -u origin master
+  319  git branch featureone
+  320  git branch
+  321  git checkout featureone
+  322  git branch
+  323  ls -s
+  324  git log --oneline
+  325  git branch master
+  326  git checkout master
+  327  git branch
+  328  git log --oneline
+  329  git checkout featureone
+  330  git branch
+  331  touch five.java
+  332  git add .
+  333  git commit -m "feature changes"
+  334  git log --oneline
+  335  git --amend -m "f1"
+  336  git commit --amend -m "f1"
+  337  git log --oneline
+  338  touch six.java
+  339  git addd .
+  340  git add .
+  341  git commit -m "f2"
+  342  git log --onbeline
+  343  git log --oneline
+  344  git remote -v
+  345  git push -u origin featureone
+  346  clear
+  347  git branch
+  348  git log --oneline
+  349  git checkout master
+  350  git log --oneline
+  351  git branch
+  352  git merge featureone
+  353  git branch
+  354  git log --oneline
+  355  ls -s
+  356  cd ..
+  357  mkdir new2
+  358  cd new2
+  359  git init
+  360  touch one.c
+  361  git add .
+  362  git commit -m "m1"
+  363  git log --oneline
+  364  touch two.java
+  365  git add .
+  366  git commit -m "m2"
+  367  git log --oneline
+  368  git branch
+  369  git branch feat
+  370  git branch
+  371  git checkout feature
+  372  git checkout feat
+  373  git branch
+  374  ls -s
+  375  git log --oneline
+  376  touch 3.c
+  377  git add .
+  378  git commit -m "f1"
+  379  touch 4.c
+  380  git add .
+  381  git commit -m "f2"
+  382  git log --oneline
+  383  git branch
+  384  git checkout master
+  385  git branch
+  386  touch defect.c
+  387  git add .
+  388  git commit -m "d1"
+  389  git log --oneline
+  390  git branch
+  391  git checkout feat
+  392  git log --oneline
+  393  git branch
+  394  git checkout master
+  395  git branch
+  396  git merge feat
+  397  git branch
+  398  git log --oneline
+  399  git reset --hard 1526d71
+  400  git log --oneline
+  401  git status
+  402  touch defect.c
+  403  git add .
+  404  git commit -m "d1"
+  405  git log --oneline
+  406  git branch
+  407  git checkout feat
+  408  git branch
+  409  git log --oneline
+  410  git rebase master
+  411  git log --oneline
+  412  git branch
+  413  git checkout master
+  414  git branch
+  415  git log --oneline
+  416  git merge feat
+  417  git log --oneline
+  418  history
+  419  history >> gitmerge
